@@ -329,11 +329,9 @@ Open a Pull Request
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 👨‍💻 Author
-Your Name
+hate
 
-GitHub: @your-username
-LinkedIn: Your Name
-Email: your.email@example.com
+GitHub: @creattijf
 🙏 Acknowledgments
 React - UI library
 Material-UI - Component library
