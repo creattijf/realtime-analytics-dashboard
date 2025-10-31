@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: analytics_postgres_dev
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: analytics_dashboard
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_dev_data:/var/lib/postgresql/data
+    networks:
+      - analytics_network
+
+  redis:
+    image: redis:7-alpine
+    container_name: analytics_redis_dev
+    ports:
+      - "6379:6379"
+    networks:
+      - analytics_network
+
+volumes:
+  postgres_dev_data:
+
+networks:
+  analytics_network:
+    driver: bridge

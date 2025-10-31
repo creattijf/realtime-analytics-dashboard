@@ -1,0 +1,33 @@
+# Файлы зависимостей
+# Не храним тысячи файлов библиотек в Git
+node_modules/
+
+# Локальные файлы окружения
+# Содержат секреты (ключи API, пароли)
+.env
+.env.*.local
+!/.env.example
+
+# Логи и временные файлы
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+
+# Файлы сборки
+# Генерируются при команде `npm run build`
+build/
+dist/
+.next/
+out/
+
+# Файлы IDE и системные файлы
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+.DS_Store
+Thumbs.db
