@@ -125,7 +125,7 @@ text
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/realtime-analytics-dashboard.git
+git clone https://github.com/creattijf/realtime-analytics-dashboard.git
 cd realtime-analytics-dashboard
 
 # Install backend dependencies
